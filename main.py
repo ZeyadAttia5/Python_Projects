@@ -1,3 +1,9 @@
+import os
+try:
+	os.mkdir("C:/Users/Administrator/Desktop/DIO")
+except FileExistsError:
+	pass
+
 with open("C:/Users/Administrator/Desktop/DIO/DIO.h", "w+") as DIO_Header:
 	DIO_Header.write('/*\n')
 
